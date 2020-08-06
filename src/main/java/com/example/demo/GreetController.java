@@ -18,4 +18,11 @@ public class GreetController {
         greeting.setUser(String.format(template,user));
         return greeting;
     }
+    @GetMapping("/")
+    public Greeting index(){
+        Greeting greeting=new Greeting();
+        greeting.setId(id.incrementAndGet());
+        greeting.setUser(String.format(template,"xlzhao"));
+        return greeting;
+    }
 }
