@@ -18,5 +18,13 @@ public class Greeting {
     public void setUser(String user) {
         this.user = user;
     }
+
+    @Override
+    public String toString() {
+        return "Greeting{" +
+                "id=" + id +
+                ", user='" + user + '\'' +
+                '}';
+    }
 }
 
